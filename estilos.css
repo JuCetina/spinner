@@ -1,0 +1,35 @@
+.spinner-container {
+	position: relative;
+}
+
+.spinner,
+.spinner-two {
+	border: 9px solid transparent;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.spinner {
+	border-left-color: #2774ae;
+	border-top-color: #2774ae;
+	border-bottom-color: #2774ae;
+	animation: spin 2s linear infinite;
+	z-index: 1;
+}
+
+.spinner-two {
+	border-right-color: #7ed6df;
+	animation: spin 3.5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
